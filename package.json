@@ -1,6 +1,6 @@
 {
   "name": "random-data-pe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate user data from Peru",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/rflimat/random-data-pe.git"
   },
-  "keywords": ["data","random","peru"],
+  "keywords": [
+    "data",
+    "random",
+    "peru"
+  ],
   "author": "Raul Lima <raulflimat@gmail.com>",
   "license": "MIT",
   "bugs": {
