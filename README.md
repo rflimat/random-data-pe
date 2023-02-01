@@ -1,6 +1,6 @@
 # random-data-pe
 
-Whenever I start a new project, I don't know what to write for the first commit. After doing a “git init” there is technically nothing there...
+Every time I need to record data of a person from Peru when the project is in the development environment, it is required to use test data easily ...
 
 ## Install
 
@@ -26,4 +26,4 @@ If someone wants to add or improve something, I invite you to collaborate direct
 
 # License
 
-funny-commit is released under the [MIT License](https://opensource.org/licenses/MIT).
+random-data-pe is released under the [MIT License](https://opensource.org/licenses/MIT).
