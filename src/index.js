@@ -44,7 +44,7 @@ const generateDNI = () => {
 
 /* Generate CellphoneNumber "Celular" */
 const generateCellphoneNumber = () => {
-    let cellphoneNumber = "9";
+    let cellphoneNumber = "+519";
     for(let i = 1; i <= 8; i++) 
         cellphoneNumber += String(Math.trunc(Math.random()*9));
     return cellphoneNumber;
@@ -52,14 +52,15 @@ const generateCellphoneNumber = () => {
 
 /* Generate PhoneNumber "Telefono" */
 const generatePhoneNumber = () => {
-    let phoneNumber = "0";
-    let intRandom = Math.trunc(Math.random()*9);
-    if (intRandom == 1) {
-        phoneNumber += String(intRandom);
+    let phoneNumber = "";
+    let regionalPrefixes = [1, 41, 43, 83, 54, 66, 76, 84, 67, 62, 56, 65, 64, 44, 74, 65, 73, 51, 42, 52, 72, 61];
+    let intRandom = regionalPrefixes[Math.trunc(Math.random()*regionalPrefixes.length)];
+    if (intRandom === 1) {
+        phoneNumber += `(0${intRandom}) `;
         for(let i = 1; i <= 7; i++) 
             phoneNumber += String(Math.trunc(Math.random()*9));
     } else {
-        phoneNumber += String(intRandom) + String(Math.trunc(Math.random()*9)) + " ";
+        phoneNumber += `(0${intRandom}) `;
         for(let i = 1; i <= 6; i++) 
             phoneNumber += String(Math.trunc(Math.random()*9));
     }
